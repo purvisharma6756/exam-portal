@@ -1,0 +1,101 @@
+<style>
+*{
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(135deg,#003366,#0066cc);
+    min-height: 100vh;
+    padding: 15px;
+}
+
+/* COMMON BOX */
+.box{
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+/* LOGIN */
+.login-box{
+    max-width: 350px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.login-box h2{
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.login-box input{
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+.login-box button{
+    width: 100%;
+    padding: 8px;
+    background: #003366;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* EXAM */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.timer{
+    background: #003366;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.question{
+    font-weight: bold;
+    margin: 14px 0 6px;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+}
+
+.option span{
+    width: 25px;
+    font-weight: bold;
+}
+
+button.submit{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background: #0066cc;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* RESULT */
+.answer{
+    background: #f1f5ff;
+    padding: 8px;
+    margin: 6px 0;
+    border-left: 4px solid #0066cc;
+}
+</style>
