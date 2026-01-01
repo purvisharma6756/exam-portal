@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>RIOEL Exam Portal</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<script src="script.js"></script>
+<!-- LOGIN SECTION -->
+<div class="box login-box" id="loginSection">
+    <h2>RIOEL Exam Login</h2>
+    <input type="text" id="username" placeholder="Enter Username">
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="login()">Login</button>
+</div>
+
+<!-- EXAM SECTION -->
+<div class="box" id="examSection" style="display:none">
+
+<div class="header">
+    <h2>MS Word Online Exam</h2>
+    <div class="timer" id="timer">30:00</div>
+</div>
+
+<form id="examForm">
+
+<div class="question">1. MS Word is an example of which type of software?</div>
+<div class="option"><input type="radio" name="q1" value="A"><span>A.</span> System software</div>
+<div class="option"><input type="radio" name="q1" value="B"><span>B.</span> Application software</div>
+<div class="option"><input type="radio" name="q1" value="C"><span>C.</span> Utility software</div>
+<div class="option"><input type="radio" name="q1" value="D"><span>D.</span> Programming software</div>
+
+<div class="question">2. What is the default file extension of MS Word?</div>
+<div class="option"><input type="radio" name="q2" value="A"><span>A.</span> .doc</div>
+<div class="option"><input type="radio" name="q2" value="B"><span>B.</span> .docx</div>
+<div class="option"><input type="radio" name="q2" value="C"><span>C.</span> .txt</div>
+<div class="option"><input type="radio" name="q2" value="D"><span>D.</span> .pdf</div>
+
+<!-- Q3 -->
+<div class="question">3. Which option is used to open an existing document?</div>
+<div class="option"><input type="radio" name="q3" value="A"><span>A.</span> New</div>
+<div class="option"><input type="radio" name="q3" value="B"><span>B.</span> Save</div>
+<div class="option"><input type="radio" name="q3" value="C"><span>C.</span> Open</div>
+<div class="option"><input type="radio" name="q3" value="D"><span>D.</span> Close</div>
+
+<!-- Q4 -->
+<div class="question">4. Which toolbar contains options like Bold, Italic, and Underline?</div>
+<div class="option"><input type="radio" name="q4" value="A"><span>A.</span> Status bar</div>
+<div class="option"><input type="radio" name="q4" value="B"><span>B.</span> Title bar</div>
+<div class="option"><input type="radio" name="q4" value="C"><span>C.</span> Formatting toolbar</div>
+<div class="option"><input type="radio" name="q4" value="D"><span>D.</span> Drawing toolbar</div>
+
+<!-- Q5 -->
+<div class="question">5. Shortcut key for Bold text is:</div>
+<div class="option"><input type="radio" name="q5" value="A"><span>A.</span> Ctrl + I</div>
+<div class="option"><input type="radio" name="q5" value="B"><span>B.</span> Ctrl + U</div>
+<div class="option"><input type="radio" name="q5" value="C"><span>C.</span> Ctrl + B</div>
+<div class="option"><input type="radio" name="q5" value="D"><span>D.</span> Ctrl + P</div>
+
+<!-- Q6 -->
+<div class="question">6. Shortcut key to save a document is:</div>
+<div class="option"><input type="radio" name="q6" value="A"><span>A.</span> Ctrl + N</div>
+<div class="option"><input type="radio" name="q6" value="B"><span>B.</span> Ctrl + O</div>
+<div class="option"><input type="radio" name="q6" value="C"><span>C.</span> Ctrl + S</div>
+<div class="option"><input type="radio" name="q6" value="D"><span>D.</span> Ctrl + A</div>
+
+<!-- Q7 -->
+<div class="question">7. Which alignment positions text equally between margins?</div>
+<div class="option"><input type="radio" name="q7" value="A"><span>A.</span> Left</div>
+<div class="option"><input type="radio" name="q7" value="B"><span>B.</span> Right</div>
+<div class="option"><input type="radio" name="q7" value="C"><span>C.</span> Center</div>
+<div class="option"><input type="radio" name="q7" value="D"><span>D.</span> Justify</div>
+
+<!-- Q8 -->
+<div class="question">8. Which feature checks spelling mistakes in a document?</div>
+<div class="option"><input type="radio" name="q8" value="A"><span>A.</span> Grammar</div>
+<div class="option"><input type="radio" name="q8" value="B"><span>B.</span> Thesaurus</div>
+<div class="option"><input type="radio" name="q8" value="C"><span>C.</span> Spell Check</div>
+<div class="option"><input type="radio" name="q8" value="D"><span>D.</span> Translate</div>
+
+<!-- Q9 -->
+<div class="question">9. What does the Thesaurus tool do?</div>
+<div class="option"><input type="radio" name="q9" value="A"><span>A.</span> Checks grammar</div>
+<div class="option"><input type="radio" name="q9" value="B"><span>B.</span> Finds synonyms</div>
+<div class="option"><input type="radio" name="q9" value="C"><span>C.</span> Formats text</div>
+<div class="option"><input type="radio" name="q9" value="D"><span>D.</span> Inserts images</div>
+
+<!-- Q10 -->
+<div class="question">10. Which key deletes text to the left of the cursor?</div>
+<div class="option"><input type="radio" name="q10" value="A"><span>A.</span> Delete</div>
+<div class="option"><input type="radio" name="q10" value="B"><span>B.</span> Backspace</div>
+<div class="option"><input type="radio" name="q10" value="C"><span>C.</span> Enter</div>
+<div class="option"><input type="radio" name="q10" value="D"><span>D.</span> Shift</div>
+
+<!-- Q11 -->
+<div class="question">11. What is the maximum font size available in MS Word by default?</div>
+<div class="option"><input type="radio" name="q11" value="A"><span>A.</span> 72</div>
+<div class="option"><input type="radio" name="q11" value="B"><span>B.</span> 48</div>
+<div class="option"><input type="radio" name="q11" value="C"><span>C.</span> 96</div>
+<div class="option"><input type="radio" name="q11" value="D"><span>D.</span> 72+</div>
+
+<!-- Q12 -->
+<div class="question">12. Which tab contains options to insert tables, pictures, and charts?</div>
+<div class="option"><input type="radio" name="q12" value="A"><span>A.</span> Home</div>
+<div class="option"><input type="radio" name="q12" value="B"><span>B.</span> Insert</div>
+<div class="option"><input type="radio" name="q12" value="C"><span>C.</span> Design</div>
+<div class="option"><input type="radio" name="q12" value="D"><span>D.</span> Review</div>
+
+<!-- Q13 -->
+<div class="question">13. Which option is used to change page orientation?</div>
+<div class="option"><input type="radio" name="q13" value="A"><span>A.</span> Margins</div>
+<div class="option"><input type="radio" name="q13" value="B"><span>B.</span> Columns</div>
+<div class="option"><input type="radio" name="q13" value="C"><span>C.</span> Orientation</div>
+<div class="option"><input type="radio" name="q13" value="D"><span>D.</span> Size</div>
+
+<!-- Q14 -->
+<div class="question">14. Which view shows how the document will look when printed?</div>
+<div class="option"><input type="radio" name="q14" value="A"><span>A.</span> Draft View</div>
+<div class="option"><input type="radio" name="q14" value="B"><span>B.</span> Outline View</div>
+<div class="option"><input type="radio" name="q14" value="C"><span>C.</span> Print Layout</div>
+<div class="option"><input type="radio" name="q14" value="D"><span>D.</span> Web Layout</div>
+
+<!-- Q15 -->
+<div class="question">15. Which option is used to add page numbers?</div>
+<div class="option"><input type="radio" name="q15" value="A"><span>A.</span> Header</div>
+<div class="option"><input type="radio" name="q15" value="B"><span>B.</span> Footer</div>
+<div class="option"><input type="radio" name="q15" value="C"><span>C.</span> Page Setup</div>
+<div class="option"><input type="radio" name="q15" value="D"><span>D.</span> Page Number</div>
+
+<!-- Q16 -->
+<div class="question">16. What is the shortcut key for Undo?</div>
+<div class="option"><input type="radio" name="q16" value="A"><span>A.</span> Ctrl + Y</div>
+<div class="option"><input type="radio" name="q16" value="B"><span>B.</span> Ctrl + Z</div>
+<div class="option"><input type="radio" name="q16" value="C"><span>C.</span> Ctrl + X</div>
+<div class="option"><input type="radio" name="q16" value="D"><span>D.</span> Ctrl + C</div>
+
+<!-- Q17 -->
+<div class="question">17. Which feature is used to create multiple copies of the same letter?</div>
+<div class="option"><input type="radio" name="q17" value="A"><span>A.</span> Mail Merge</div>
+<div class="option"><input type="radio" name="q17" value="B"><span>B.</span> Macro</div>
+<div class="option"><input type="radio" name="q17" value="C"><span>C.</span> Template</div>
+<div class="option"><input type="radio" name="q17" value="D"><span>D.</span> Format Painter</div>
+
+<!-- Q18 -->
+<div class="question">18. Which option copies formatting from one text to another?</div>
+<div class="option"><input type="radio" name="q18" value="A"><span>A.</span> Font</div>
+<div class="option"><input type="radio" name="q18" value="B"><span>B.</span> Styles</div>
+<div class="option"><input type="radio" name="q18" value="C"><span>C.</span> Format Painter</div>
+<div class="option"><input type="radio" name="q18" value="D"><span>D.</span> Clipboard</div>
+
+<!-- Q19 -->
+<div class="question">19. Which tab contains the Track Changes option?</div>
+<div class="option"><input type="radio" name="q19" value="A"><span>A.</span> Home</div>
+<div class="option"><input type="radio" name="q19" value="B"><span>B.</span> Insert</div>
+<div class="option"><input type="radio" name="q19" value="C"><span>C.</span> Review</div>
+<div class="option"><input type="radio" name="q19" value="D"><span>D.</span> View</div>
+
+<!-- Q20 -->
+<div class="question">20. Which option is used to find a word in a document?</div>
+<div class="option"><input type="radio" name="q20" value="A"><span>A.</span> Replace</div>
+<div class="option"><input type="radio" name="q20" value="B"><span>B.</span> Go To</div>
+<div class="option"><input type="radio" name="q20" value="C"><span>C.</span> Find</div>
+<div class="option"><input type="radio" name="q20" value="D"><span>D.</span> Select</div>
+
+<!-- Q21 -->
+<div class="question">21. What does Ctrl + A do?</div>
+<div class="option"><input type="radio" name="q21" value="A"><span>A.</span> Select one line</div>
+<div class="option"><input type="radio" name="q21" value="B"><span>B.</span> Select one paragraph</div>
+<div class="option"><input type="radio" name="q21" value="C"><span>C.</span> Select entire document</div>
+<div class="option"><input type="radio" name="q21" value="D"><span>D.</span> Select page</div>
+
+<!-- Q22 -->
+<div class="question">22. Which file format is best for sharing documents without editing?</div>
+<div class="option"><input type="radio" name="q22" value="A"><span>A.</span> .docx</div>
+<div class="option"><input type="radio" name="q22" value="B"><span>B.</span> .txt</div>
+<div class="option"><input type="radio" name="q22" value="C"><span>C.</span> .html</div>
+<div class="option"><input type="radio" name="q22" value="D"><span>D.</span> .pdf</div>
+
+<!-- Q23 -->
+<div class="question">23. Which feature is used to divide text into columns?</div>
+<div class="option"><input type="radio" name="q23" value="A"><span>A.</span> Breaks</div>
+<div class="option"><input type="radio" name="q23" value="B"><span>B.</span> Indentation</div>
+<div class="option"><input type="radio" name="q23" value="C"><span>C.</span> Columns</div>
+<div class="option"><input type="radio" name="q23" value="D"><span>D.</span> Tables</div>
+
+<!-- Q24 -->
+<div class="question">24. Which tab is used to change themes and document colors?</div>
+<div class="option"><input type="radio" name="q24" value="A"><span>A.</span> Home</div>
+<div class="option"><input type="radio" name="q24" value="B"><span>B.</span> Insert</div>
+<div class="option"><input type="radio" name="q24" value="C"><span>C.</span> Design</div>
+<div class="option"><input type="radio" name="q24" value="D"><span>D.</span> Layout</div>
+
+<!-- Q25 -->
+<div class="question">25. Which symbol indicates spelling error in MS Word?</div>
+<div class="option"><input type="radio" name="q25" value="A"><span>A.</span> Red underline</div>
+<div class="option"><input type="radio" name="q25" value="B"><span>B.</span> Blue underline</div>
+<div class="option"><input type="radio" name="q25" value="C"><span>C.</span> Green underline</div>
+<div class="option"><input type="radio" name="q25" value="D"><span>D.</span> Black underline</div>
+
+<!-- Q26 -->
+<div class="question">26. What is the default orientation of a Word document?</div>
+<div class="option"><input type="radio" name="q26" value="A"><span>A.</span> Portrait</div>
+<div class="option"><input type="radio" name="q26" value="B"><span>B.</span> Landscape</div>
+<div class="option"><input type="radio" name="q26" value="C"><span>C.</span> Square</div>
+<div class="option"><input type="radio" name="q26" value="D"><span>D.</span> Book</div>
+
+<!-- Q27 -->
+<div class="question">27. Which option is used to insert a table?</div>
+<div class="option"><input type="radio" name="q27" value="A"><span>A.</span> Home tab</div>
+<div class="option"><input type="radio" name="q27" value="B"><span>B.</span> Insert tab</div>
+<div class="option"><input type="radio" name="q27" value="C"><span>C.</span> Review tab</div>
+<div class="option"><input type="radio" name="q27" value="D"><span>D.</span> View tab</div>
+
+<!-- Q28 -->
+<div class="question">28. Which shortcut key is used to print a document?</div>
+<div class="option"><input type="radio" name="q28" value="A"><span>A.</span> Ctrl + S</div>
+<div class="option"><input type="radio" name="q28" value="B"><span>B.</span> Ctrl + P</div>
+<div class="option"><input type="radio" name="q28" value="C"><span>C.</span> Ctrl + O</div>
+<div class="option"><input type="radio" name="q28" value="D"><span>D.</span> Ctrl + N</div>
+
+<!-- Q29 -->
+<div class="question">29. Which option changes line spacing?</div>
+<div class="option"><input type="radio" name="q29" value="A"><span>A.</span> Paragraph</div>
+<div class="option"><input type="radio" name="q29" value="B"><span>B.</span> Styles</div>
+<div class="option"><input type="radio" name="q29" value="C"><span>C.</span> Font</div>
+<div class="option"><input type="radio" name="q29" value="D"><span>D.</span> Borders</div>
+
+<!-- Q30 -->
+<div class="question">30. What is the use of Header and Footer?</div>
+<div class="option"><input type="radio" name="q30" value="A"><span>A.</span> Add main content</div>
+<div class="option"><input type="radio" name="q30" value="B"><span>B.</span> Add images</div>
+<div class="option"><input type="radio" name="q30" value="C"><span>C.</span> Add repeated text on each page</div>
+<div class="option"><input type="radio" name="q30" value="D"><span>D.</span> Add tables</div>
+
+<!-- Q31 -->
+<div class="question">31. Which feature protects a document from editing?</div>
+<div class="option"><input type="radio" name="q31" value="A"><span>A.</span> Password</div>
+<div class="option"><input type="radio" name="q31" value="B"><span>B.</span> Restrict Editing</div>
+<div class="option"><input type="radio" name="q31" value="C"><span>C.</span> Lock View</div>
+<div class="option"><input type="radio" name="q31" value="D"><span>D.</span> Protect File</div>
+
+<!-- Q32 -->
+<div class="question">32. Which key combination cuts selected text?</div>
+<div class="option"><input type="radio" name="q32" value="A"><span>A.</span> Ctrl + C</div>
+<div class="option"><input type="radio" name="q32" value="B"><span>B.</span> Ctrl + V</div>
+<div class="option"><input type="radio" name="q32" value="C"><span>C.</span> Ctrl + X</div>
+<div class="option"><input type="radio" name="q32" value="D"><span>D.</span> Ctrl + Z</div>
+
+<!-- Q33 -->
+<div class="question">33. Which option inserts a page break?</div>
+<div class="option"><input type="radio" name="q33" value="A"><span>A.</span> Enter</div>
+<div class="option"><input type="radio" name="q33" value="B"><span>B.</span> Ctrl + Enter</div>
+<div class="option"><input type="radio" name="q33" value="C"><span>C.</span> Shift + Enter</div>
+<div class="option"><input type="radio" name="q33" value="D"><span>D.</span> Alt + Enter</div>
+
+<!-- Q34 -->
+<div class="question">34. Which feature automatically corrects common typing mistakes?</div>
+<div class="option"><input type="radio" name="q34" value="A"><span>A.</span> Spell Check</div>
+<div class="option"><input type="radio" name="q34" value="B"><span>B.</span> AutoCorrect</div>
+<div class="option"><input type="radio" name="q34" value="C"><span>C.</span> Grammar</div>
+<div class="option"><input type="radio" name="q34" value="D"><span>D.</span> Thesaurus</div>
+
+<!-- Q35 -->
+<div class="question">35. Which option shows word count of a document?</div>
+<div class="option"><input type="radio" name="q35" value="A"><span>A.</span> Status Bar</div>
+<div class="option"><input type="radio" name="q35" value="B"><span>B.</span> Review Tab</div>
+<div class="option"><input type="radio" name="q35" value="C"><span>C.</span> Insert Tab</div>
+<div class="option"><input type="radio" name="q35" value="D"><span>D.</span> View Tab</div>
+
+<!-- Q36 -->
+<div class="question">36. What is the use of SmartArt?</div>
+<div class="option"><input type="radio" name="q36" value="A"><span>A.</span> Insert images</div>
+<div class="option"><input type="radio" name="q36" value="B"><span>B.</span> Create diagrams</div>
+<div class="option"><input type="radio" name="q36" value="C"><span>C.</span> Create tables</div>
+<div class="option"><input type="radio" name="q36" value="D"><span>D.</span> Insert equations</div>
+
+<!-- Q37 -->
+<div class="question">37. Which tab is used to zoom in or out of a document?</div>
+<div class="option"><input type="radio" name="q37" value="A"><span>A.</span> Home</div>
+<div class="option"><input type="radio" name="q37" value="B"><span>B.</span> Insert</div>
+<div class="option"><input type="radio" name="q37" value="C"><span>C.</span> Review</div>
+<div class="option"><input type="radio" name="q37" value="D"><span>D.</span> View</div>
+
+<!-- Q38 -->
+<div class="question">38. Which option is used to change margins?</div>
+<div class="option"><input type="radio" name="q38" value="A"><span>A.</span> Size</div>
+<div class="option"><input type="radio" name="q38" value="B"><span>B.</span> Orientation</div>
+<div class="option"><input type="radio" name="q38" value="C"><span>C.</span> Margins</div>
+<div class="option"><input type="radio" name="q38" value="D"><span>D.</span> Columns</div>
+
+<!-- Q39 -->
+<div class="question">39. Which feature allows comments in a document?</div>
+<div class="option"><input type="radio" name="q39" value="A"><span>A.</span> Notes</div>
+<div class="option"><input type="radio" name="q39" value="B"><span>B.</span> Comments</div>
+<div class="option"><input type="radio" name="q39" value="C"><span>C.</span> Track</div>
+<div class="option"><input type="radio" name="q39" value="D"><span>D.</span> Review</div>
+
+<!-- Q40 -->
+<div class="question">40. Which option is used to replace a word throughout the document?</div>
+<div class="option"><input type="radio" name="q40" value="A"><span>A.</span> Find</div>
+<div class="option"><input type="radio" name="q40" value="B"><span>B.</span> Replace</div>
+<div class="option"><input type="radio" name="q40" value="C"><span>C.</span> Select</div>
+<div class="option"><input type="radio" name="q40" value="D"><span>D.</span> Go To</div>
+
+<!-- 👉 ADD Q3–Q40 SAME FORMAT -->
+
+<button type="button" class="submit" onclick="submitExam()">Submit Exam</button>
+</form>
+</div>
+
+<!-- RESULT + ANSWER SECTION -->
+<div class="box" id="resultSection" style="display:none">
+    <h2 style="color:#003366">Result & Correct Answers</h2>
+    <p id="scoreText"></p>
+
+    <h3>Correct Answers:</h3>
+
+    <div class="answer">Q1. Application software</div>
+    <div class="answer">Q2. .docx</div>
+    <div class="answer">Q3. C) Open</div>
+<div class="answer">Q4. C) Formatting toolbar</div>
+<div class="answer">Q5. C) Ctrl + B</div>
+<div class="answer">Q6. C) Ctrl + S</div>
+<div class="answer">Q7. D) Justify</div>
+<div class="answer">Q8. C) Spell Check</div>
+<div class="answer">Q9. B) Finds synonyms</div>
+<div class="answer">Q10. B) Backspace</div>
+<div class="answer">Q11. A) 72</div>
+<div class="answer">Q12. B) Insert</div>
+<div class="answer">Q13. C) Orientation</div>
+<div class="answer">Q14. C) Print Layout</div>
+<div class="answer">Q15. D) Page Number</div>
+<div class="answer">Q16. B) Ctrl + Z</div>
+<div class="answer">Q17. A) Mail Merge</div>
+<div class="answer">Q18. C) Format Painter</div>
+<div class="answer">Q19. C) Review</div>
+<div class="answer">Q20. C) Find</div>
+<div class="answer">Q21. C) Select entire document</div>
+<div class="answer">Q22. D) .pdf</div>
+<div class="answer">Q23. C) Columns</div>
+<div class="answer">Q24. C) Design</div>
+<div class="answer">Q25. A) Red underline</div>
+<div class="answer">Q26. A) Portrait</div>
+<div class="answer">Q27. B) Insert tab</div>
+<div class="answer">Q28. B) Ctrl + P</div>
+<div class="answer">Q29. A) Paragraph</div>
+<div class="answer">Q30. C) Add repeated text on each page</div>
+<div class="answer">Q31. B) Restrict Editing</div>
+<div class="answer">Q32. C) Ctrl + X</div>
+<div class="answer">Q33. B) Ctrl + Enter</div>
+<div class="answer">Q34. B) AutoCorrect</div>
+<div class="answer">Q35. A) Status Bar</div>
+<div class="answer">Q36. B) Create diagrams</div>
+<div class="answer">Q37. D) View</div>
+<div class="answer">Q38. C) Margins</div>
+<div class="answer">Q39. B) Comments</div>
+<div class="answer">Q40. B) Replace</div>
+
+
+    <!-- 👉 ADD Q3–Q40 ANSWERS HERE -->
+</div>
+
+
+</body>
+</html>
